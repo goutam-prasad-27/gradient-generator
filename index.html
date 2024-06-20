@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<title>Gradient Generator</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Gradient Color Generator</h1>
+			<div class="gradient-box"></div>
+			<div class="row options">
+				<div class="column direction">
+					<p>Direction</p>
+					<div class="select-box">
+						<select name="" id="">
+							<!-- ! DON'T CHANGE ANYTHING HERE IF NOT NECESSARY -->
+							<option value="0deg">0°</option>
+							<option value="45deg">45°</option>
+							<option value="90deg">90°</option>
+							<option value="135deg">135°</option>
+							<option value="180deg">180°</option>
+							<option value="225deg">225°</option>
+							<option value="270deg">270°</option>
+							<option value="315deg" selected>315°</option>
+						</select>
+					</div>
+				</div>
+				<div class="column colors">
+					<p>Colors</p>
+					<div class="input"> 		<!-- TODO: IF ANY CHANGE HAPPEN REMEMBER TO CHANGE THE VALUE OF INPUTS -->
+						<input type="color" value="#B68AC1" /><input
+							type="color"
+							value="#9CD8E1"
+						/>
+					</div>
+				</div>
+			</div>
+			<textarea class="row">
+background: linear-gradient(315deg, #B68AC1, #9CD8E1);        <!-- TODO: IF ANY CHANGE HAPPEN REMEMBER TO CHANGE THE TEXTAREA INFO -->
+                </textarea
+			>
+			<div class="row buttons">
+				<button class="refresh">Refresh Color</button
+				><button class="copy">Copy Code</button>
+			</div>
+		</div>
+	</body>
+</html>
