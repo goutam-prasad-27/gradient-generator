@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;    /*TODO: YOU CAN CHANGE FONT FROM HERE*/
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	color: #e5e5e5;
+	background: #222;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: -20px;
+}
+
+.wrapper {
+	width: 420px;
+	padding: 20px;
+	border-radius: 25px;
+	background-color: #333;
+}
+.wrapper .gradient-box {
+	width: 100%;
+	height: 220px;
+	border-radius: 15px;
+	background: linear-gradient(315deg, #B68AC1, #9CD8E1);   
+}
+.wrapper .row {
+	display: flex;
+	margin: 20px 0;
+	justify-content: space-evenly;
+}
+.row:where(.column) {
+	width: calc(100% / 12px);
+}
+
+.options p {
+	font-size: 1.2rem;
+	margin-bottom: 8px;
+}
+.options .select-box {
+	border-radius: 8px;
+	padding: 5px 5px;
+	border: 2px solid #aaa;
+}
+.select-box select {
+	color: #999;
+	font-weight: 600;
+	width: 90px;
+	border: none;
+	outline: none;
+	overflow: none;
+	font-size: 0.9rem;
+	background: none;
+}
+.options .colors {
+	margin-left: 60px;
+}
+.colors input {
+	background-color: #333;
+	border: none;
+	height: 30px;
+	width: calc(100% / 20px);
+}
+.colors input:last-child {
+	margin-left: 5px;
+}
+
+.wrapper textarea {
+	color: #999;
+	background-color: #333;
+	outline: none;
+	width: 100%;
+	font-weight: 500;
+	resize: none;
+	font-size: 15px;
+	border-radius: 15px;
+	overflow: hidden;
+	padding: 5px 20px;
+	border: 2px solid #aaa;
+}
+
+.buttons button {
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 1rem;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 0 0 -15px;
+}
+.buttons .refresh {
+	background: #6c757d;
+}
+.buttons .copy {
+	background: #B68AC1;
+}
+.buttons .copy:hover {
+	background: #9d50b0;
+}
+.buttons .refresh:hover {
+	background: #5b6269;
+}
